@@ -25,7 +25,7 @@ export default function Home() {
             <div className="cursor-pointer">
               <IoSunnySharp color="yellow" size={36} />
             </div>
-          ) : (
+          ) : ( 
             <div className="cursor-pointer">
               <FaMoon color="grey" size={30} />
             </div>
