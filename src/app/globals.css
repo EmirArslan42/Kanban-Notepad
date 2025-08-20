@@ -29,8 +29,8 @@ body {
   font-family: "SF Pro Display", sans-serif;
 }
 
-.add-task{
-  transform: translate(-50%,-50%);
+.add-task {
+  transform: translate(-50%, -50%);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 13px;
   z-index: 1000;
   background-color: rgba(169, 169, 169, 0.61);
@@ -41,12 +41,29 @@ body {
   align-items: center;
 }
 
-.svg{
+.svg {
   border-radius: 9999px;
-  background: linear-gradient(135deg,rgb(217,2,20.5),65%,rgb(0,128,200,0.9));
+  background: linear-gradient(
+    135deg,
+    rgb(217, 2, 20.5),
+    65%,
+    rgb(0, 128, 200, 0.9)
+  );
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 13px;
   position: absolute;
   bottom: 5%;
   right: 5%;
   cursor: pointer;
+}
+
+body.light {
+  color: black;
+  /*background-color: white;*/
+  background: linear-gradient(to right, #bbab81, #afd8c4, #7693e6);
+}
+
+body.dark {
+  color: white;
+  /* background-color: rgb(27, 27, 27); */
+  background: linear-gradient(to right, #3a372d, #3a2f2f, #1c2621, #2a313d);
 }

@@ -7,7 +7,9 @@ const useStore = create((set) => ({
     Benson: [],
     Pops: [],
     Skips: [],
-    GreatJob:[]
+    MuscleMan:[],
+    HighFive:[],
+    GreatJob:[],
   },
   addTask: (column, task) => {
     set((state) => {
@@ -16,7 +18,7 @@ const useStore = create((set) => ({
         [column]: [...state.tasks[column], task],
       };
       console.log("Add Tasks: ", updatedTasks);
-      localStorage.setItem("task", JSON.stringify(updatedTasks));
+      localStorage.setItem("tasks", JSON.stringify(updatedTasks));
 
       return { tasks: updatedTasks };
     });
