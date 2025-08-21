@@ -83,6 +83,8 @@ const Page = () => {
         return "kasadam"
     }else if(img=="highfive"){
         return "cakbeslik"
+    }else if(img=="greatjob"){
+        return "GreatJob"
     }else{
         return img.toLowerCase();
     }
