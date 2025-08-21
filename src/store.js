@@ -29,7 +29,7 @@ const useStore = create((set) => ({
       const [movedTask] = updateTasks[source].splice(taskIndex, 1);
       updateTasks[destination].push(movedTask);
 
-      localStorage.setItem("task", JSON.stringify(updateTasks));
+      localStorage.setItem("tasks", JSON.stringify(updateTasks));
       console.log("Update Tasks: ", updateTasks);
 
       return { tasks: updateTasks };
