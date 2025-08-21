@@ -10,8 +10,8 @@ export default function Home() {
     document.body.className = theme;
   }, [theme]);
   return (
-    <div className="pl-5 pr-5 md:pl-14 md:pr-14 mt-10">
-      <div>
+    <div className="w-full h-full pl-5 pr-5 md:pl-14 md:pr-14 mt-10">
+      <div className="w-full h-full">
         <div className="text-center text-2xl font-semibold p-3">
           Regular Show
         </div>

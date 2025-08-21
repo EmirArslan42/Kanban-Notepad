@@ -132,7 +132,7 @@ const Page = () => {
           </div>
         </div>
       )}
-      <div className="flex justify-center">
+      <div className="flex justify-center w-full h-full">
         <div className=" gap-4 my-16 grid grid-cols-1  sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4">
         <div className="absolute left-24 top-24 bg-red-500"><SvgButton modal={modal} setModal={setModal} /></div>
         {characters.map((character, index) => (
